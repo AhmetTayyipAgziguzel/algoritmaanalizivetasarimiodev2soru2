@@ -37,7 +37,9 @@ Algoritmanın Çalışma Zamanı Analizi
 Bu algoritmanın çalışma zamanı analizi aşağıdaki gibidir:
 
 •	En iyi durum: Kelime grubu metinde hiç geçmiyorsa, algoritma sadece dosyanın tamamını bir kez okuyacak ve her kelime grubu için horspool_search fonksiyonunu çağıracaktır. Bu nedenle, en iyi durumda algoritmanın çalışma zamanı O(n), n dosyanın karakter sayısıdır.
+
 •	En kötü durum: Algoritma, kelime grubu metinde çok sık geçiyorsa, horspool_search fonksiyonu bu kelime grubu için tüm olası konumları kontrol etmek zorunda kalacaktır. Bu durumda, horspool_search fonksiyonu O(mn) zamanında çalışacak, burada m kelime grubunun uzunluğudur. Her kelime grubu için fonksiyon çağırdığımızda, bu işlemi 5 kez yapacağız, bu nedenle en kötü durumda algoritmanın çalışma zamanı O(5mn) veya sadece O(mn) olacaktır.
+
 •	Ortalama durum: Genellikle, metindeki kelime gruplarının sayısı dosya boyutuna göre sınırlıdır, bu nedenle, ortalamada, algoritma birkaç kez horspool_search fonksiyonunu çağıracak ve her biri O(mn) zamanında çalışacaktır. Bu nedenle, algoritmanın ortalama çalışma zamanı O(kmn) olacaktır, burada k kelime gruplarının sayısıdır.
 
 
